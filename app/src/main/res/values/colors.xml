@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey_light_alpha">#73c5c9cd</color>
+    <color name="tab_bottom_background">#ee363636</color>
+    <color name="highlight_normal">#20a0e9</color>
+    <color name="white">#ffffff</color>
+    <!-- for text, button ect. -->
+    <color name="grey_dark_more">#2f2f2f</color>
+    <color name="grey_dark">#3e444c</color>
+    <color name="grey_normal">#989a9c</color>
+    <color name="grey_light">#c5c9cd</color>
+    <color name="grey_press">#eef2f5</color>
+    <color name="green_approve">#00994c</color>
+    <!-- 40% alpha -->
+    <color name="white_alpha_light">#66ffffff</color>
+    <color name="semitransparent">#66000000</color>
+    <color name="divider_grey">#CDCECF</color>
+    <color name="transparent">#00000000</color>
+    <color name="normal_page_bg">@color/white</color>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">China-Vat</string>
+
+    <string name="navigation_drawer_open">打开菜单</string>
+    <string name="navigation_drawer_close">关闭菜单</string>
+
+    <string name="action_settings">设置</string>
+
+
+    <string name="filter">筛选</string>
+    <string name="time_sort">时间</string>
+    <string name="money_sort">金额</string>
+    <string name="more_sort">更多排序</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="filter_deal_date">交易日期</string>
+    <string name="filter_deal_date_start">开始日期:</string>
+    <string name="filter_deal_date_end">结束日期:</string>
+    <string name="filter_deal_type">交易类型</string>
+    <string name="filter_invoice_status">发票状态</string>
+    <string name="filter_deal_add">交易地点</string>
+    <string name="filter_phone">电话号码</string>
+    <string name="filter_empty">清空选择</string>
+    <string name="sort_alpha_down">字母降序</string>
+    <string name="sort_alpha_up">字母升序</string>
+
+    <string name="all_filter_sort">不限</string>
+    <string name="filter_address_1">北京</string>
+    <string name="filter_address_2">上海</string>
+    <string name="filter_status_1">已经审核</string>
+    <string name="filter_status_2">等待审核</string>
+    <string name="time_sort_1">从早到晚</string>
+    <string name="time_sort_2">从晚到早</string>
+    <string name="money_sort_1">从高到低</string>
+    <string name="money_sort_2">从低到高</string>
+    <!-- tab view -->
+    <string name="access_tab_activity">tabActivity</string>
+    <string name="access_tab_connections">tabConnections</string>
+    <string name="access_tab_find">tabFind</string>
+    <string name="access_tab_profile">tabProfile</string>
+
+    <string name="invoice_normal">普通发票</string>
+    <string name="invoice_red">红字发票</string>
+
+    <string name="date_error_tip">结束日期必须在开始日期之后!</string>
+
+</resources>

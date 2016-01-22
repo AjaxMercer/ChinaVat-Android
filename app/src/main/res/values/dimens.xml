@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- text size -->
+    <dimen name="textsize_xsl">60dp</dimen>
+    <dimen name="textsize_sl">34dp</dimen>
+    <dimen name="textsize_xxl">24dp</dimen>
+    <dimen name="textsize_xl">18dp</dimen>
+    <dimen name="textsize_l">16dp</dimen>
+    <dimen name="textsize_m">14dp</dimen>
+    <dimen name="textsize_s">12dp</dimen>
+    <dimen name="textsize_ms">10dp</dimen>
+    <dimen name="textsize_xs">8dp</dimen>
+
+    <!-- padding -->
+    <dimen name="padding_normal">12dp</dimen>
+    <dimen name="padding_xnormal">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_xlarge">36dp</dimen>
+    <dimen name="padding_xxl">48dp</dimen>
+    <dimen name="padding_text">20dp</dimen>
+
+    <!-- divider -->
+    <dimen name="divider_thick">4px</dimen>
+    <dimen name="divider_normal">2px</dimen>
+    <dimen name="divider_thin">1px</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="tab_view_indicator_bar_height">2.6dp</dimen>
+    <dimen name="switch_width">56dp</dimen>
+    <dimen name="switch_height">20dp</dimen>
+    <dimen name="switch_border_width">2dp</dimen>
+    <dimen name="table_view_sumary_width">110dp</dimen>
+</resources>

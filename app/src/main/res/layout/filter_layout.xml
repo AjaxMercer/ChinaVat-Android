@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_light_alpha">
+
+    <LinearLayout
+        android:id="@+id/tab_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/tab_bottom_background"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_tv"
+                style="@style/SortFilterTabTextViewWhiteColor"
+                android:drawableTop="@drawable/tab_view_filter_image_selector"
+                android:text="@string/filter" />
+
+            <TextView
+                android:id="@+id/time_sort_tv"
+                style="@style/SortFilterTabTextViewWhiteColor"
+                android:drawableTop="@drawable/tab_view_time_image_selector"
+                android:text="@string/time_sort" />
+
+            <TextView
+                android:id="@+id/money_sort_tv"
+                style="@style/SortFilterTabTextViewWhiteColor"
+                android:drawableTop="@drawable/tab_view_money_image_selector"
+                android:text="@string/money_sort" />
+
+            <TextView
+                android:id="@+id/more_sort_tv"
+                style="@style/SortFilterTabTextViewWhiteColor"
+                android:drawableTop="@drawable/tab_view_more_image_selector"
+                android:text="@string/more_sort" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/filter_sort_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/filter_sort_rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/grey_dark"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/filter_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_dark_btn_background"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/filter_sort_ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/black_dark_btn_background"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/clear_filter_sort_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/black_dark_more_background"
+                android:paddingLeft="@dimen/padding_xsmall"
+                android:paddingRight="@dimen/padding_xsmall"
+                android:text="@string/filter_empty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_l" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/filter_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_sort_rl_header"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/filter_options_ll"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/filter_deal_date_tv"
+                    style="@style/FilterSubTextView"
+                    android:text="@string/filter_deal_date" />
+
+                <TextView
+                    android:id="@+id/filter_deal_type_tv"
+                    style="@style/FilterSubTextView"
+                    android:text="@string/filter_deal_type" />
+
+
+                <TextView
+                    android:id="@+id/filter_phone_type_tv"
+                    style="@style/FilterSubTextView"
+                    android:text="@string/filter_phone" />
+
+
+                <TextView
+                    android:id="@+id/filter_deal_add_tv"
+                    style="@style/FilterSubTextView"
+                    android:text="@string/filter_deal_add" />
+
+
+                <TextView
+                    android:id="@+id/filter_invoice_status_tv"
+                    style="@style/FilterSubTextView"
+                    android:text="@string/filter_invoice_status" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/sub_filter_lv"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:visibility="gone">
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/deal_date_ll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_deal_date_start"
+                        android:paddingTop="@dimen/padding_large"
+                        android:paddingBottom="@dimen/padding_large"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/textsize_xl"/>
+
+                    <TextView
+                        android:id="@+id/date_start_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="2016-01-06"
+                        android:textSize="@dimen/textsize_l"
+                        android:textColor="@color/tab_item_color_selector"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="@dimen/padding_large"
+                        android:paddingBottom="@dimen/padding_large"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_thick"
+                    android:background="@color/grey_light_alpha" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_deal_date_end"
+                        android:paddingTop="@dimen/padding_large"
+                        android:paddingBottom="@dimen/padding_large"
+                        android:paddingLeft="@dimen/padding_large"
+                        android:textSize="@dimen/textsize_xl"/>
+
+                    <TextView
+                        android:id="@+id/date_end_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="2016-01-31"
+                        android:textSize="@dimen/textsize_l"
+                        android:gravity="center"
+                        android:textColor="@color/tab_item_color_selector"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="@dimen/padding_large"
+                        android:paddingBottom="@dimen/padding_large"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_thick"
+                    android:background="@color/grey_light_alpha" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sort_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_sort_rl_header"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/sort_options_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/grey_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sort_alpha_up_tv"
+                    style="@style/SortTextView"
+                    android:text="@string/sort_alpha_up" />
+
+                <TextView
+                    android:id="@+id/sort_alpha_down_tv"
+                    style="@style/SortTextView"
+                    android:text="@string/sort_alpha_down" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/sub_no_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sort_sub_no_tv"
+                        style="@style/SortSubVTextView"
+                        android:text="@string/all_filter_sort" />
+
+                    <ImageView
+                        android:id="@+id/sort_sub_no_iv"
+                        style="@style/SortSubIv"
+                        android:background="@drawable/background_unlimited_iv_selector"
+                        android:checked="true" />
+
+                    <TextView
+                        style="@style/SortDivider"
+                        android:layout_below="@id/sort_sub_no_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sub_deal_type_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub_no_rl">
+
+                    <TextView
+                        android:id="@+id/sort_sub_deal_type_tv"
+                        style="@style/SortSubVTextView"
+                        android:text="@string/filter_deal_type" />
+
+                    <ImageView
+                        android:id="@+id/sort_sub_del_type_iv"
+                        style="@style/SortSubIv" />
+
+
+                    <TextView
+                        style="@style/SortDivider"
+                        android:layout_below="@id/sort_sub_deal_type_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sub_deal_address_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub_deal_type_rl">
+
+                    <TextView
+                        android:id="@+id/sort_sub_deal_add_tv"
+                        style="@style/SortSubVTextView"
+                        android:text="@string/filter_deal_add" />
+
+                    <ImageView
+                        android:id="@+id/sort_sub_deal_add_iv"
+                        style="@style/SortSubIv" />
+
+                    <TextView
+                        style="@style/SortDivider"
+                        android:layout_below="@id/sort_sub_deal_add_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sub_invoice_status_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub_deal_address_rl">
+
+                    <TextView
+                        android:id="@+id/sort_sub_invoice_status_tv"
+                        style="@style/SortSubVTextView"
+                        android:text="@string/filter_invoice_status" />
+
+                    <ImageView
+                        android:id="@+id/sort_sub_invoice_status_iv"
+                        style="@style/SortSubIv"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        style="@style/SortDivider"
+                        android:layout_below="@id/sort_sub_invoice_status_tv" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/sub_phone_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub_invoice_status_rl">
+
+                    <TextView
+                        android:id="@+id/sort_sub_phone_tv"
+                        style="@style/SortSubVTextView"
+                        android:text="@string/filter_phone" />
+
+                    <ImageView
+                        android:id="@+id/sort_sub_phone_iv"
+                        style="@style/SortSubIv" />
+
+                    <TextView
+                        style="@style/SortDivider"
+                        android:layout_below="@id/sort_sub_phone_tv" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
