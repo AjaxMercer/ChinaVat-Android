@@ -32,8 +32,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile 'com.android.support:design:23.1.1'
-    compile files('libs/volly-1.0.11.jar')
-    compile files('libs/okhttp-2.5.0.jar')
-    compile files('libs/okhttp-urlconnection-2.5.0.jar')
     compile project(':viewutils')
+    compile project(':netutils')
 }
