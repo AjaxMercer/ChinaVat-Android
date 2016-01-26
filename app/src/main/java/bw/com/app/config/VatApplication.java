@@ -3,6 +3,7 @@ package bw.com.app.config;
 import android.app.Application;
 
 
+import org.netutils.NetUtils;
 import org.viewutils.ViewUtil;
 
 
@@ -16,6 +17,6 @@ public class VatApplication extends Application{
     public void onCreate() {
         super.onCreate();
         ViewUtil.init(this);
-
+        NetUtils.init(this);
     }
 }

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ChinaVat-Android.iml" filepath="$PROJECT_DIR$/ChinaVat-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbutils/dbutils.iml" filepath="$PROJECT_DIR$/dbutils/dbutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/netutils/netutils.iml" filepath="$PROJECT_DIR$/netutils/netutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewutils/viewutils.iml" filepath="$PROJECT_DIR$/viewutils/viewutils.iml" />
     </modules>
